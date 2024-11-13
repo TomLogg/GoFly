@@ -1,0 +1,277 @@
+/* Import a professional-looking Google font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #1e2a38; /* Deep navy background */
+  color: #e0e0e0; /* Light grey text */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Header Styling */
+header {
+  background-color: #2f3d4a; /* Soft dark grey for header */
+  color: white;
+  padding: 20px;
+}
+
+header h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+  color: #00bfa6; /* Teal for contrast */
+  margin: 0;
+}
+
+header p {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+}
+
+.logo {
+  width: 150px; /* Adjust this size as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centers the logo horizontally */
+}
+
+/* Navigation bar styling */
+.nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #1e2a38;
+}
+
+.nav-bar li {
+  padding: 15px 20px;
+}
+
+.nav-bar li a {
+  color: #00bfa6; /* Teal accent color */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-bar li a:hover {
+  color: #02a693; /* Slightly darker teal on hover */
+}
+
+/* Main button styles */
+button,
+.view-all-button,
+.nav-bar li a {
+  background-color: #00bfa6; /* Teal button color */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover,
+.view-all-button:hover,
+.nav-bar li a:hover {
+  background-color: #02a693; /* Slightly darker teal on hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+.view-all-button {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#progress-bar-wrapper {
+  display: flex;
+  height: 30px;
+  width: 80%;
+  background-color: #2f3d4a;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+/* Progress bar styling */
+.progress-container {
+  margin: 20px;
+}
+
+#progress-bar {
+  width: 80%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #2f3d4a; /* Dark grey background for the bar */
+}
+
+.progress-segment {
+  height: 100%;
+}
+
+/* Dark grey background for sections */
+#recent-comments,
+#all-comments-section,
+#filter-section {
+  background-color: #2f3d4a;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  margin: 20px auto;
+  text-align: left;
+}
+
+/* Comments List Styling */
+#comments-list,
+#all-comments-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#comments-list li,
+#all-comments-list li {
+  padding: 10px;
+  border-bottom: 1px solid #4a5a68;
+  font-size: 1rem;
+}
+
+#comments-list li:last-child,
+#all-comments-list li:last-child {
+  border-bottom: none;
+}
+
+/* Filter Section */
+#filter-section h2 {
+  color: #00bfa6;
+  font-size: 1.5rem;
+}
+
+#date-filter,
+#filter-button,
+#clear-filter {
+  margin: 5px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Form styling */
+#track-hours-form {
+  background-color: #2f3d4a;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.hidden {
+  display: none !important;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  color: #00bfa6;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #4a5a68;
+  background-color: #1e2a38;
+  color: #e0e0e0;
+}
+
+/* Footer styling */
+footer {
+  background-color: #2f3d4a;
+  color: #e0e0e0;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+#reset-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#reset-button {
+  background-color: #b0b0b0; /* Subtle grey color to make it less prominent */
+  color: #333;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#reset-button:hover {
+  background-color: #a0a0a0; /* Slightly darker grey on hover */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  #track-hours-form,
+  #filter-section,
+  #recent-comments,
+  #all-comments-section {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .nav-bar li {
+    padding: 10px;
+  }
+
+  #all-comments-modal .modal-content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .nav-bar li {
+    padding: 8px;
+  }
+
+  button,
+  .view-all-button,
+  .nav-bar li a {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+
+#weather-section {
+  background-color: #2f3d4a; /* Dark grey for consistency */
+  color: #e0e0e0;
+  padding: 15px;
+  border-radius: 8px;
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}

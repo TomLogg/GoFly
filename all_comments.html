@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Comments - GoFly</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>GoFly</h1>
+      <!-- Navigation bar matching the homepage -->
+      <nav>
+        <ul class="nav-bar">
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="all_comments.html">Comments</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="filter-section">
+        <h2>Filter Comments by Date</h2>
+        <input type="date" id="date-filter" />
+        <button id="filter-button">Filter</button>
+        <button id="clear-filter">Clear Filter</button>
+      </section>
+
+      <section id="all-comments-section">
+        <ul id="all-comments-list"></ul>
+      </section>
+    </main>
+
+    <script src="comments_page.js"></script>
+  </body>
+</html>

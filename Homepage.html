@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoFly - Track Your Training Hours</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>GoFly</h1>
+      <nav>
+        <ul class="nav-bar">
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="all_comments.html">All Comments</a></li>
+        </ul>
+      </nav>
+      <p>Track Your Training Hours to Become an Airline Pilot</p>
+    </header>
+
+    <main>
+      <section id="weather-section">
+        <h2>Current Weather</h2>
+        <p id="weather-info">Loading weather data...</p>
+      </section>
+
+      <!-- Progress bar section -->
+      <div class="progress-container">
+        <label for="progress-bar">Training Progress:</label>
+        <div id="progress-bar-wrapper">
+          <!-- Progress bar segments will be added here -->
+        </div>
+        <span id="progress-text">0 / 1500 Hours</span>
+      </div>
+
+      <!-- Track hours form -->
+      <section id="track-hours-section">
+        <button id="track-hours-button">Track Hours</button>
+        <div id="track-hours-form" class="hidden">
+          <h2>Track Your Flight Hours</h2>
+          <form id="hours-form">
+            <label for="certification-select">Current Certification:</label>
+            <select id="certification-select" required>
+              <option value="private">Private Pilot</option>
+              <option value="instrument">Instrument Rating</option>
+              <option value="multi-engine">Multi-Engine Rating</option>
+              <option value="commercial">Commercial Pilot</option>
+              <option value="flight-instructor">Flight Instructor</option>
+              <option value="building-hours">Building Hours</option>
+            </select>
+
+            <label for="hours-input">Enter Hours:</label>
+            <input type="number" id="hours-input" min="0" step="0.1" required />
+
+            <label for="comments">Comments on Flight:</label>
+            <textarea id="comments" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Recent comments section -->
+      <section id="recent-comments">
+        <h2>Recent Comments</h2>
+        <ul id="comments-list"></ul>
+        <a href="all_comments.html" class="view-all-button"
+          >View All Comments</a
+        >
+      </section>
+
+      <!-- Reset Data Button at the bottom -->
+      <section id="reset-section">
+        <button id="reset-button">Reset Data</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
