@@ -275,3 +275,31 @@ footer p {
   margin: 20px auto;
   text-align: center;
 }
+
+#location-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#location-input {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-right: 5px;
+}
+
+#location-form button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #00bfa6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#location-form button:hover {
+  background-color: #02a693;
+}
